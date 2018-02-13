@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <StartArguments>value-type "D:\TFS\Framework\Dev\Master\Multinet.Framework\Multinet.System\bin\Debug\Multinet.System.xml" "D:\TFS\Framework\Dev\Master\Multinet.Framework\Multinet.Framework.Docs\Import\multinetframeworkdocs\value-types"</StartArguments>
+  </PropertyGroup>
+</Project>

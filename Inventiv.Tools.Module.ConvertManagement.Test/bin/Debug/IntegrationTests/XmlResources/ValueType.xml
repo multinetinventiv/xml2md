@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Multinet.System</name>
+    </assembly>
+    <members>
+        <member name="T:System.Binary">
+            <summary>
+            <typeInfo dbColumn="\[Property\_Adı\]\(varbinary\(max\)\)"><code>string</code></typeInfo>
+            <para>Binary içeriği ifade eden sınıftır.
+            <code>Date</code>, <code>Money</code> vb. sınıflar gibi <code>Binary</code> de web servislerde <code>string</code> olarak gönderilip alınır. 
+            Web servislerde resim vb. içeriklerin yüklenmesi istendiğinde ya da <italic>Excel</italic>, <italic>Pdf</italic> vb. çıktıların paylaşılması istendiğinde bu sınıf kullanılabilir.</para>
+            <code>Binary</code> ile <code>byte[]</code> arasında <italic>implicit</italic> dönüşüm yapılabilir. Yani bir byte array'i <code>Binary</code> değişkenine doğrudan eşitlenebilir ya da tam tersi işlemler de yapılabilir.
+            <para>Binary içeriği servislerde <code>Base64</code> formatında paylaşılır ve o şekilde gönderilmesi beklenir. Base64 hakkında detaylı bilgi için bakınız: <see cref="!:https://en.wikipedia.org/wiki/Base64">Base64</see></para>
+            </summary>
+        </member>
+        <member name="M:System.Binary.Parse(System.String)">
+            <summary>
+            Base64 formatındaki string Binary'ye çevrilir.
+            <modifier>static</modifier>
+            </summary> 
+            <param name="valueString">Base64 formatındaki string değeri</param>
+            <returns><code>Binary</code></returns>
+            <exception cref="T:System.FormatException">Base64 formatındaki veride hata varsa <italic>Format uyuşmazlığı</italic> hatası alınır</exception>
+        </member>
+        <member name="M:System.Binary.#ctor(System.Byte[])">
+            <summary>
+            Yapıcı metodu ifade eder. Binary nesnesi byte[] tipindeki veri ile oluşturulur.
+            </summary>
+            <param name="value">byte[] tipindeki veri</param>
+        </member>
+        <member name="M:System.Binary.ToUtf8String">
+            <summary>
+            Binary tipindeki veri UTF8 formatına çevrilir. 
+            </summary>
+            <returns><code>String</code></returns>
+        </member>
+        <member name="P:System.Binary.Value">
+            <summary>
+            <code>byte[]</code> tipindeki değeri döner
+            </summary>
+            <value>
+            <code>byte[]</code> tipindeki değeri ifade eder
+            </value>
+        </member>
+        <member name="M:System.BinaryExtensions.ToUtf8Binary(System.String)">
+            <summary>
+            <code>Base64</code> formatındaki veriyi <see cref="!:https://en.wikipedia.org/wiki/UTF-8">UTF8</see> encoding ile <code>Binary</code> tipine çevirir.
+            <para><code> Binary binaryValue = "multinetinventiv".ToUtf8Binary(); </code> </para>
+            </summary>
+            <param name="source">Base64 formatındaki string değeri</param>
+            <returns><code>Binary</code></returns>
+        </member>
+        <member name="M:System.BinaryExtensions.ToUtf8String(System.Byte[])">
+            <summary>
+            byte[] tipindeki veriyi UTF8 formatında string tipine çevirir.
+            <para>
+            <code>
+            Binary binaryValue = "multinetinventiv".ToUtf8Binary();
+            <para>string utf8StringValue = binaryValue.Value.ToUtf8String();</para>
+            </code>
+            </para>
+            </summary>
+            <param name="source">byte[] tipindeki değer</param>
+            <returns><code>string</code></returns>
+        </member>
+        <member name="T:System.CountryCode">
+            <summary>
+            Ülke kodu bilgisini ifade eden sınıftır.
+            <remarks>
+            
+            </remarks>
+            </summary>
+        </member>
+        <member name="F:System.CountryCode.Default">
+            <summary>
+            Varsayılan Ülke kodunu saklar
+            </summary>
+        </member>
+        <member name="M:System.CountryCode.Parse(System.String)">
+            <summary>
+            `String` tipindeki ülke kodunu `CountryCode` tipine çevirir ve `CountryCode` tipindeki ülke kodunu döner
+            </summary>
+            <param name="countryCodeString">
+            2 haneli `String` tipindeki ülke kodu
+            Örnek: "TR" 
+            </param>
+            <returns>`ContryCode` tipindeki ülke kodu</returns>
+            <exception cref="T:System.ArgumentNullException">Veri bulunamadı</exception>
+            <exception cref="T:System.FormatException`1">Format uyuşmazlığı</exception>
+        </member>
+        <member name="M:System.CountryCode.GetAllCodes">
+            <summary>
+            Tüm ülke kodlarını döner
+            </summary>
+            <returns>Ülke kodlarının listesi</returns>
+        </member>
+        <member name="M:System.CountryCode.ToString">
+            <summary>
+            Ülke kodunu `String` tipinde döner
+            </summary>
+            <returns>`String` tipindeki ülke kodu</returns>
+        </member>
+        <member name="M:System.CountryCode.op_Equality(System.CountryCode,System.CountryCode)">
+            <summary>
+            Iki `CountryCode` nesnesinin eşitliği kontrol edlilir. Eşit ise `true`, değilse `false` döner
+            </summary>
+            <param name="a">`CountryCode` nesnesi</param>
+            <param name="b">`CountryCode` nesnesi</param>
+            <returns> Eşit ise `true`, değilse `false` </returns>
+        </member>
+        <member name="M:System.CountryCode.op_Inequality(System.CountryCode,System.CountryCode)">
+            <summary>
+            Iki `CountryCode` nesnesinin eşit olmaması kontrol edlilir. Eşit değil ise `true`, eşit ise `false` döner
+            </summary>
+            <param name="a">`CountryCode` nesnesi</param>
+            <param name="b">`CountryCode` nesnesi</param>
+            <returns> Eşit değil ise `true`, eşit ise `false` </returns>
+        </member>
+        <member name="M:System.CountryCode.Equals(System.Object)">
+            <summary>
+            `Object` tipindeki `obj` nesnesi ile saklanan ülke kodu eşit ise `true`, değilse `false` döner
+            </summary>
+            <param name="obj">Karşılaştırılacak `Object` tipindeki `CountryCode` nesnesi</param>
+            <returns>`Object` tipindeki `obj` nesnesi ile saklanan ülke kodu eşit ise `true`, değilse `false`</returns>
+        </member>
+        <member name="M:System.CountryCode.Equals(System.CountryCode)">
+            <summary>
+            `CountryCode` tipindeki `other` nesnesi ile saklanan ülke kodu eşit ise `true`, değilse `false` döner
+            </summary>
+            <param name="other">Karşılaştırılacak `CountryCode` nesnesi</param>
+            <returns>`other` nesnesi ile saklanan ülke kodu eşit ise `true`, değilse `false`</returns>
+        </member>
+        <member name="M:System.CountryCode.GetHashCode">
+            <summary>
+            Saklanan ülek kodu için üretilen `int` tipindeki hash'i döner
+            </summary>
+            <returns>Saklanan ülke kodu boş değil ise `int` tipindeki hash, boş ise 0</returns>
+        </member>
+        <member name="P:System.CountryCode.Value">
+            <summary>
+            `String` tipindeki ülke kodunu döner
+            </summary>
+            <value>
+            `String` tipindeki ülke kodu
+            </value>
+        </member>
+        <member name="P:System.CountryCode.Code2">
+            <summary>
+            `String` tipindeki 3 haneli ülke kodunu döner
+            </summary>
+            <value>
+            `String` tipindeki 3 haneli ülke kodu
+            </value>
+        </member>
+        <member name="P:System.CountryCode.Numeric">
+            <summary>
+            `String` tipindeki sayısal ülke kodunu döner
+            </summary>
+            <value>
+            `String` tipindeki sayısal ülke kodunu döner
+            </value>
+        </member>
+        <member name="T:System.Geoloc">
+            <summary>
+            <typeInfo dbColumn="\[Property_Adı\]Latitude\(float\), \[Property_Adı\]Longitude\(float\)"><code>string</code>("##.#######,##.#######")</typeInfo>
+            Coğrafi koordinatı ifade eden sınıftır. <code>Date</code>, <code>Money</code> vb. sınıflar gibi <code>Geoloc</code> da web servislerde string olarak gönderilip alınır.
+            <code>Binary</code> içeriği servislerde ##.#######,##.#######(enlem, boylam, örn.41.0053215,29.0121795) formatında paylaşılır ve o şekilde gönderilmesi beklenir.
+            <para><code>Geoloc</code> nesneleri doğrudan veritabanına da yazılabilmektedir. Bir <code>Geoloc</code> alanı 
+            örneğin <italic>Location</italic> adlı bir property ile tutuluyorsa, veritabanında <italic>LocationLatitude</italic> ve <italic>LocationLongitude</italic> adlı iki 
+            <code>decimal</code> alan olması gerekmektedir.</para>
+            </summary>
+        </member>
+        <member name="M:System.Geoloc.#ctor(System.Double,System.Double)">
+            <summary>
+            Yapıcı metodu ifade eder. double tipindeki enlem ve boylam bilgisi ile oluşturulur.
+            </summary>
+            <param name="latitude">double tipindeki enlem bilgisi</param>
+            <param name="longitude">double tipindeki boylam bilgisi</param>
+        </member>
+        <member name="M:System.Geoloc.Parse(System.String)">
+            <summary>
+            <code>String</code> tipindeki enlem ve boylam bilgisini doğrulayarak <code>Geoloc</code> tipine çevirir.
+            </summary>
+            <param name="geolocString"><code>String</code> tipindeki enlem ve boylam bilgisi. 
+            <para>Elem ve boylam bilgilerindeki ondalık ayırıcı nokta olmalıdır. Elem ve boylam bilgilerinin arasında virgül ve boşluk bulunmalıdır.</para>
+            <para>Örnek: 38.9637, 35.2433</para>
+            </param>
+            <returns>Parse edilmiş <code>Geoloc</code> bilgisi
+            <para><strong>Dönüş Tipi:</strong> <code>Geoloc</code></para> 
+            </returns>
+            <exception cref="T:System.FormatException">Format uyuşmazlığı</exception>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:System.Geoloc.GetExtent(System.Double)" -->
+        <member name="M:System.Geoloc.Move(System.Double,System.Double)">
+            <summary> 
+            Koordinata metre cinsinden uzaklıktaki yeni koordinatları hesaplar.
+            </summary> 
+            <param name="distanceInMeters">Metre cinsinden uzaklık</param> 
+            <param name="bearingInDegrees">Derece cinsinden açı (0:kuzey, 90:doğu, 180:güney, 270:batı)</param> 
+            <returns>Yeni koordinat bilgisi</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">Uzaklık parametresi 1m'den küçük ya da 1000km'den büyük (1.000.000 metrenin üstü) verildiğinde fırlatılır.</exception>
+            <exception cref="T:System.NotSupportedException">İlgili konum güney yarımküre veya negatif boylamda ise fırlatılır.</exception>
+        </member>
+        <member name="T:System.Iban">
+            <summary>
+             <typeInfo dbColumn="\[Property\_Adı\]\(nvarchar\(255\)\)"><code>string</code></typeInfo>
+            IBAN bilgisini ifade eden sınıftır. 
+            <code>Date</code>, <code>Money</code> vb. sınıflar gibi <code>Iban</code>'da web servislerde <code>string</code> olarak gönderilip alınır.
+            Boşluk olmayacak şekilde 26 hanelik bir metin olarak saklanır. IBAN oluştururken boşluklar tolere edilir. 
+            <para>Geçerli IBAN örnekleri;</para>
+             <para><code>TR33 0006 1005 1978 6457 8413 26</code></para>
+             <para><code>SE35 5000 0000 0549 1000 0003</code></para>
+             <para><code>MT84 MALT 0110 0001 2345 MTLC AST0 01S</code></para>
+            Iban nesneleri veritabanına <code>char(26)</code> tipinde tek alan olacak şekilde doğrudan bağlanabilir.
+            Iban sınıfı yerel validasyonu içermektedir, örneğin aşağıdaki IBAN geçersizdir;    
+            <para><code>TR33 0006 1005 1978 6457 8413 27</code></para>
+            IBAN formatı detayları için bakınız: <see cref="!:http://en.wikipedia.org/wiki/International_Bank_Account_Number">International Bank Account Number</see>
+            </summary>   
+        </member>
+        <member name="F:System.Iban.Empty">
+            <summary>
+            Boş iban bilgisini ifade eder
+            </summary>
+        </member>
+        <member name="M:System.Iban.Parse(System.String)">
+            <summary>
+            <code>String</code> tipindeki ibanı doğrulayarak <code>Iban</code> tipine çevirir.
+            <para>Örnek: </para>
+            <para><code>TR33 0006 1005 1978 6457 8413 26</code></para>
+            <para><code>TR330006100519786457841326</code></para>
+            </summary>
+            <param name="ibanString"><code>String</code> tipindeki iban. Parametrenin boşluklu olup olmaması önemsizdir.</param>
+            <returns><code>Iban</code> </returns>
+            <exception cref="T:System.ArgumentNullException">Veri bulunamadı hatası</exception>
+            <exception cref="T:System.FormatException">Format uyuşmazlığı</exception>
+        </member>
+        <member name="M:System.Iban.ToString">
+            <summary>
+            <code>String</code> tipindeki ibanı döner
+            </summary>
+            <returns>
+            <code>String</code> tipindeki iban 
+            </returns>
+        </member>
+        <member name="M:System.Iban.Clone">
+            <summary>
+            Kopyalanan <code>Iban</code> nesnesini döner
+            </summary>
+            <returns><code>Iban</code> nesnesi</returns>
+        </member>
+        <member name="P:System.Iban.Value">
+            <summary>
+            <code>String</code> tipindeki ibanı döner
+            </summary>
+            <value>
+            <code>String</code> tipindeki ibanı ifade eder
+            </value>
+        </member>
+    </members>
+</doc>

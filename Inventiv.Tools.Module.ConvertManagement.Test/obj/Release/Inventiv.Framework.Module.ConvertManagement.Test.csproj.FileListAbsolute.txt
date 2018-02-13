@@ -1,0 +1,15 @@
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\obj\Release\Inventiv.Framework.Module.ConvertManagement.Test.csprojResolveAssemblyReference.cache
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Inventiv.Framework.Module.ConvertManagement.Test.dll
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Inventiv.Framework.Module.ConvertManagement.Test.pdb
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\nunit.framework.dll
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\xml2md.exe
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Microsoft.Extensions.CommandLineUtils.dll
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\xml2md.pdb
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\nunit.framework.xml
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Microsoft.Extensions.CommandLineUtils.xml
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\obj\Release\Inventiv.Framework.Module.ConvertManagement.Test.dll
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\obj\Release\Inventiv.Framework.Module.ConvertManagement.Test.pdb
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Castle.Core.dll
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Moq.dll
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Moq.pdb
+D:\TFS\Framework\Dev\Master\Inventiv.Framework.XmlToMdConverter\Inventiv.Framework.Module.ConvertManagement.Test\bin\Release\Moq.xml

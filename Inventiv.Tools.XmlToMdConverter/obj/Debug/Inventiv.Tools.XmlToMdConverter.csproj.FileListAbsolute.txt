@@ -1,0 +1,7 @@
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\bin\Debug\xml2md.exe
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\bin\Debug\xml2md.pdb
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\bin\Debug\Microsoft.Extensions.CommandLineUtils.dll
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\bin\Debug\Microsoft.Extensions.CommandLineUtils.xml
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\obj\Debug\Inventiv.Tools.XmlToMdConverter.csproj.CoreCompileInputs.cache
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\obj\Debug\xml2md.exe
+D:\GIT\Inventiv.Framework.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter\obj\Debug\xml2md.pdb

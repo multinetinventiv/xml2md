@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventiv.Tools.XmlToMdConverter", "Inventiv.Tools.XmlToMdConverter\Inventiv.Tools.XmlToMdConverter.csproj", "{D3A85675-C0C5-4C10-9774-31D65783080F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventiv.Tools.XmlToMdConverter.Test", "Inventiv.Tools.Module.ConvertManagement.Test\Inventiv.Tools.XmlToMdConverter.Test.csproj", "{01D26FEE-7AE8-45BB-8FA1-A36E84983DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3A85675-C0C5-4C10-9774-31D65783080F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A85675-C0C5-4C10-9774-31D65783080F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A85675-C0C5-4C10-9774-31D65783080F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A85675-C0C5-4C10-9774-31D65783080F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D26FEE-7AE8-45BB-8FA1-A36E84983DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D26FEE-7AE8-45BB-8FA1-A36E84983DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D26FEE-7AE8-45BB-8FA1-A36E84983DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D26FEE-7AE8-45BB-8FA1-A36E84983DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0602CF6-3B39-4590-AEBD-2EAD1875F951}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3A85675-C0C5-4C10-9774-31D65783080F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inventiv.Tools.XmlToMdConverter</RootNamespace>
+    <AssemblyName>xml2md</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>cb4a3635</NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.CommandLineUtils, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.CommandLineUtils.1.1.1\lib\net451\Microsoft.Extensions.CommandLineUtils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurations\Configuration.cs" />
+    <Compile Include="Configurations\IConfiguration.cs" />
+    <Compile Include="DocumentProcessing\DocumentProcessor.cs" />
+    <Compile Include="DocumentProcessing\IDocumentProcessor.cs" />
+    <Compile Include="Helpers\ConverterInformation.cs" />
+    <Compile Include="Converter\ApiXml2MdConverter.cs" />
+    <Compile Include="TagConverters\Italic.cs" />
+    <Compile Include="TagConverters\Field.cs" />
+    <Compile Include="TagConverters\Example.cs" />
+    <Compile Include="TagConverters\Doc.cs" />
+    <Compile Include="Helpers\MdManager.cs" />
+    <Compile Include="Helpers\ExtensionMethods.cs" />
+    <Compile Include="Helpers\XmlManager.cs" />
+    <Compile Include="ConvertManager.cs" />
+    <Compile Include="FileSystem\FileSystem.cs" />
+    <Compile Include="FileSystem\IFileSystem.cs" />
+    <Compile Include="Helpers\MdFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Converter\IXml2MdConverter.cs" />
+    <Compile Include="Converter\ValueTypeXml2MdConverter.cs" />
+    <Compile Include="TagConverters\AdditionalParam.cs" />
+    <Compile Include="TagConverters\Code.cs" />
+    <Compile Include="TagConverters\Exception.cs" />
+    <Compile Include="TagConverters\ITagConverter.cs" />
+    <Compile Include="TagConverters\Method.cs" />
+    <Compile Include="TagConverters\Modifier.cs" />
+    <Compile Include="TagConverters\None.cs" />
+    <Compile Include="TagConverters\Para.cs" />
+    <Compile Include="TagConverters\Param.cs" />
+    <Compile Include="TagConverters\Property.cs" />
+    <Compile Include="TagConverters\Remarks.cs" />
+    <Compile Include="TagConverters\Returns.cs" />
+    <Compile Include="TagConverters\SeeAnchor.cs" />
+    <Compile Include="TagConverters\SeePage.cs" />
+    <Compile Include="TagConverters\Strong.cs" />
+    <Compile Include="TagConverters\Summary.cs" />
+    <Compile Include="TagConverters\Type.cs" />
+    <Compile Include="TagConverters\TypeInfo.cs" />
+    <Compile Include="TagConverters\Value.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET solutionDir=$(SolutionDir) 
+cd  /d "%25solutionDir%25"
+cd..
+cd Multinet.Framework\Xml2Md\
+copy "$(TargetPath)"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

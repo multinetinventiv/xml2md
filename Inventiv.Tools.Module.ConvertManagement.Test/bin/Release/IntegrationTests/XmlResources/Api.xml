@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Multinet.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Multinet.Framework.WebService.ServiceExceptionData">
+            INFO: WCF tarafindan data contract olarak belirlenen siniflarda, autoproperty olmadiginda 
+            (ya da setter olmadiginda tam test etmedim), client'a connection reset gidiyor.
+            Bu nedenle DataContract yazildiginda buna dikkat edilmeli. Zaman kaybi oluyor.
+            -- cdeniz
+        </member>
+        <member name="T:Multinet.Framework.WebService.SignedServiceResultData`1">
+            INFO: WCF tarafindan data contract olarak belirlenen siniflarda, autoproperty olmadiginda 
+            (ya da setter olmadiginda tam test etmedim), client'a connection reset gidiyor.
+            Bu nedenle DataContract yazildiginda buna dikkat edilmeli. Zaman kaybi oluyor.
+            -- cdeniz
+        </member>
+        <member name="M:Multinet.Framework.Logging.ILogger.Debug(System.Object)">
+            <summary>
+            Debug seviyesinde log atar.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Multinet.Framework.WebService.ServiceResultData`1">
+            INFO: WCF tarafindan data contract olarak belirlenen siniflarda, autoproperty olmadiginda 
+            (ya da setter olmadiginda tam test etmedim), client'a connection reset gidiyor.
+            Bu nedenle DataContract yazildiginda buna dikkat edilmeli. Zaman kaybi oluyor.
+            -- cdeniz
+        </member>
+        <member name="T:Multinet.Framework.Web.Mvc.Attributes.MetadataProvider">
+            <summary>
+            This MetadataProvider adds some functionality on top of the default DataAnnotationsModelMetadataProvider.
+            It adds custom attributes (implementing IModelAttribute) to the AdditionalValues property of the model's metadata
+            so that it can be retrieved later.
+            </summary>
+        </member>
+        <member name="M:Multinet.Framework.Web.Mvc.Ui.HtmlExtensions.TimeRange(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.TimeRange,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="helper"></param>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="maxValue">UTC özelliği açık ise zaman aralığı yerelleştirilir</param>
+            <param name="htmlAttributes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Multinet.Framework.Web.Mvc.Ui.HtmlExtensions.LocalizationLabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Renders the standard label with a specified suffix added to label text
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TValue">Value</typeparam>
+            <param name="html">HTML helper</param>
+            <param name="expression">Expression</param>
+            <param name="htmlAttributes">HTML attributes</param>       
+            <returns>Label</returns>
+        </member>
+        <member name="M:Multinet.Framework.Web.Mvc.Ui.LayoutExtensions.AddScriptParts(System.Web.Mvc.HtmlHelper,System.String,System.Boolean)">
+            <summary>
+            Add script element
+            </summary>
+            <param name="html">HTML helper</param>
+            <param name="part">Script part</param>
+            <param name="excludeFromBundle">A value indicating whether to exclude this script from bundling</param>
+        </member>
+        <member name="M:Multinet.Framework.Web.Mvc.Ui.LayoutExtensions.NopScripts(System.Web.Mvc.HtmlHelper,System.Web.Mvc.UrlHelper)">
+            <summary>
+            Generate all script parts
+            </summary>
+            <param name="html">HTML helper</param>
+            <param name="urlHelper">URL Helper</param>
+            <returns>Generated string</returns>
+        </member>
+        <member name="M:Multinet.Framework.Web.Mvc.Ui.LayoutExtensions.AddCssFileParts(System.Web.Mvc.HtmlHelper,System.String,System.Boolean)">
+            <summary>
+            Add CSS element
+            </summary>
+            <param name="html">HTML helper</param>
+            <param name="part">CSS part</param>
+            <param name="excludeFromBundle">A value indicating whether to exclude this css from bundling</param>
+        </member>
+        <member name="M:Multinet.Framework.Web.Mvc.Ui.LayoutExtensions.NopCssFiles(System.Web.Mvc.HtmlHelper,System.Web.Mvc.UrlHelper,System.Nullable{System.Boolean})">
+            <summary>
+            Generate all CSS parts
+            </summary>
+            <param name="html">HTML helper</param>
+            <param name="urlHelper">URL Helper</param>
+            <returns>Generated string</returns>
+        </member>
+    </members>
+</doc>
